@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>about us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="image-section">
+                <img src="camera.jpg" alt="img">
+                <div class="content-section">
+                    <h1>About Us</h1>
+
+                </div>
+                <div class="content">
+                    <h3>Photographer and <span class="heading">Web designer</span>  </h3>
+                    <p>Welcome to our Photography Website!
+
+                        In a world where moments pass by in the blink of an eye, photography has the remarkable ability to capture and preserve those fleeting instants for eternity. It is an art form that not only freezes time but also paints vivid stories, evokes emotions, and ignites our imagination.
+                        
+                        Our Photography Website is a digital sanctuary dedicated to celebrating the captivating realm of visual storytelling. Here, we invite you to embark on a mesmerizing journey through a collection of breathtaking images, each one a testament to the power and artistry of the camera lens.
+                        
+                        From stunning landscapes that transport you to far-off destinations to intimate portraits that reveal the depth of the human spirit, our website showcases the diverse facets of photography. Our curated selection showcases the talents of passionate photographers who possess a unique ability to encapsulate the essence of a moment, whether it be the play of light and shadow, the raw beauty of nature, or the intricate details of everyday life.
+                        
+                        Whether you're a seasoned professional seeking inspiration, an aspiring photographer honing your skills, or simply an admirer of visual artistry, our Photography Website is designed to ignite your creativity and immerse you in the world of captivating imagery. We believe that photography has the power to connect people, transcend language barriers, and unveil the hidden beauty that surrounds us all. Beyond our curated gallery, our website also serves as a hub of knowledge and community. We offer insightful articles, tips, and techniques to help you enhance your photography skills, unravel the mysteries of composition, lighting, and editing, and expand your artistic horizons. So, whether you're here to explore, learn, or simply lose yourself in the beauty of the visual arts, we extend our warmest welcome. Join us as we navigate the wondrous landscapes, candid moments, and extraordinary stories captured through the lens of the camera. Welcome to our Photography Website, where passion, artistry, and imagination find their perfect frame. Happy exploring! The Photography Website Team <span id="dots">.....</span><span id="invisible-text">We believe that photography has the power to connect people, transcend language barriers, and unveil the hidden beauty that surrounds us all. Beyond our curated gallery, our website also serves as a hub of knowledge and community. We offer insightful articles, tips, and techniques to help you enhance your photography skills, unravel the mysteries of composition, lighting, and editing, and expand your artistic horizons. So, whether you're here to explore, learn, or simply lose yourself in the beauty of the visual arts, we extend our warmest welcome. Join us as we navigate the wondrous landscapes, candid moments, and extraordinary stories captured through the lens of the camera. Welcome to our Photography Website, where passion, artistry, and imagination find their perfect frame. Happy exploring! The Photography Website Team</span></p>
+                <button id="btn" onclick="ReadMoreLess()" >read more</button>
+                </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function ReadMoreLess(){
+            var dots = document.getElementById("dots");
+            var invisible-Text =Document.getElementById("invisible-text");
+            var btntext =document.getElementById("btn");
+            if(dots.style.display !="none"){
+                dots.style.display="none"
+                invisible-Text.style.display="inline"
+                btntext.innerHTML="Read Less"
+            }else{
+                dots.style.display="inline"
+                invisible-Text.style.display="none"
+                btntext.innerHTML="Read More"
+            }
+        }
+    </script>
+</body>
+</html>
