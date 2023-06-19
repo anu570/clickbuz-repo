@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <link rel="stylesheet" href="rotation.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div id="banner">
+        <div id="drone-box">
+            <img src="drone.png" class="drone-pic" alt="">
+            <img src="drone-left.png" class="left-pic" alt="">
+            <img src="drone-right.png" class="right-pic" alt="">
+        </div>
+    </div>
+    <script>
+        $(window).mousemove(function(event) {
+  $("#drone-box").css({"left" : event.pageX, "top" : event.pageY});
+});
+    </script>
+</body>
+</html>
